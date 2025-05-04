@@ -38,4 +38,6 @@
 
     RewriteRule ^ index.php [L]
 
+    RewriteRule ^storage/app/public/(.*)$ public/storage/$1 [L]
+
 </IfModule>
