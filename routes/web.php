@@ -13,7 +13,6 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('dashboard', DashboardController::class);
     Route::resource('project', ProjectAdminController::class);
     Route::resource('experience', ExperienceAdminController::class);
-
     Route::post('logout', [AdminUserController::class,'adminLogout'])->name('admin.logout');
     Route::prefix('admin')->group(function(){
     });

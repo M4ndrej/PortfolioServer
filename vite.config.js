@@ -10,4 +10,6 @@ export default defineConfig({
     ], build:{
         sourcemap: false
     },
+    base: process.env.NODE_ENV === 'production' ? '/public/' : '/',
+
 });
